@@ -1,0 +1,39 @@
+{
+  "extends": ["react-app",
+              "eslint:recommended",
+              "plugin:react/recommended"],
+  "parserOptions": { "ecmaVersion": 6 },
+  "env": {
+          "es6":true,
+          # "browser": true
+          },
+  #see https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+  #also see top of file as comment, in config files or with command line flags
+  "globals": {
+              # "google": true,
+              # "DBHelper": true,
+              # "Promise": true,
+              # "isProductionEnv": true,
+              # "RR$": true
+  },
+  "rules":  {
+              "semi": ["error", "always"],
+              #"valid-jsdoc": "off",
+              #"max-len": "off",
+              "no-unused-vars": "off",
+              "no-undef": "warn",
+              "no-console": "warn",
+              # "no-useless-escape": "warn",
+              # "no-var": "warn"
+              #react
+              "indent": 1,
+              "react/jsx-closing-bracket-location": 1,
+              "react/jsx-indent-props": 1,
+              "react/jsx-indent": 1,
+              "react/prop-types": "warn",
+              "for-direction":"off",
+              "getter-return":"off"
+  }
+    # // Additional, per-project rules...like turning error to warning
+    # https://eslint.org/docs/user-guide/configuring#configuring-rules
+}
